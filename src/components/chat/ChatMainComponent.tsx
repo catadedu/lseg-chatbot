@@ -1,5 +1,6 @@
 import styles from './ChatMainComponent.module.css';
-import ChatBotIcon from '../../assets/chat-bot-icon.svg';
+import ChatBotMessageIcon from '../../assets/chat-bot-icon.svg';
+import ChatBotTitleIcon from '../../assets/chat-bot-icon-title.svg';
 import React, {useState} from 'react';
 import {RootState} from "../../reducers/ChatStore";
 import {Dialog, DialogActions, DialogContent, DialogTitle, IconButton, InputAdornment, TextField} from "@mui/material";
@@ -120,7 +121,7 @@ const ChatMainComponent: React.FC = () => {
             }}
         >
             <DialogTitle className={styles['chat-dialog-title']}>
-                <img src={ChatBotIcon} alt="Chat Icon" className={styles['chat-icon']} />
+                <img src={ChatBotTitleIcon} alt="Chat Icon" className={styles['chat-icon']} />
                 LSEG chatbot
                 <IconButton
                     aria-label="close"

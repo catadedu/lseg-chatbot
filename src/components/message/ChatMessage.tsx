@@ -1,7 +1,7 @@
 import React from 'react';
 import { Paper, Typography, Button } from '@mui/material';
 import styles from './ChatMessage.module.css';
-import ChatBotIcon from '../../assets/chat-bot-icon.svg';
+import ChatBotMessageIcon from '../../assets/chat-bot-icon.svg';
 
 type sourceType = 'ChatBot' | 'User';
 
@@ -20,7 +20,7 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ message, source, buttons }) =
     return (
         <div className={isUser ? styles['chat-message-container-user'] : styles['chat-message-container-bot']}>
             {source === 'ChatBot' && (
-                <img src={ChatBotIcon} alt="Chat Icon" className={styles['chat-icon']} />
+                <img src={ChatBotMessageIcon} alt="Chat Icon" className={styles['chat-icon']} />
             )}
             <Paper
                 elevation={2}
