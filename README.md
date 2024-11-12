@@ -1,10 +1,19 @@
 # Getting Started with lseg-chatbot
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+More information here -> https://github.com/catadedu/lseg-chatbot/wiki
+
+
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+for installing the dependencies.
+
+You can run:
 
 ### `npm start`
 
